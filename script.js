@@ -1,4 +1,4 @@
-const games = ["math", "guess", "memory"];
+const games = ["math", "guess", "memory","color","typing"];
 function login() {
     const name = document.getElementById("nameInput").value;
     const pass = document.getElementById("passwordInput").value;
