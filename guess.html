@@ -23,6 +23,10 @@
                     document.getElementById('chances').innerText = chances;
                     if (chances === 0) {
                         document.getElementById('result').innerText = "Out of chances! The answer was " + answer;
+                          const timer = setInterval(() => {
+      document.getElementById("timer").innerText = "⏳ Time: " + time-- + "s";
+      if (time < 0) endGame(false);
+    }, 1000);
                     }
                 }
             }
