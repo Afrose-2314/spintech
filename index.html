@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spin & Play</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginScreen" class="centered">
+        <h2>Welcome to Spin & Play</h2>
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <input type="password" id="passwordInput" placeholder="Password" value="12345678" />
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="spinnerScreen" class="hidden">
+        <h2>Hello, <span id="playerName"></span>!</h2>
+        <div id="wheel" onclick="spinWheel()">🎯 SPIN</div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
