@@ -32,6 +32,10 @@
             }
             setTimeout(generateQuestion, 1000);
         }
+          const timer = setInterval(() => {
+      document.getElementById("timer").innerText = "⏳ Time: " + time-- + "s";
+      if (time < 0) endGame(false);
+    }, 1000);
 
         window.onload = generateQuestion;
     </script>
